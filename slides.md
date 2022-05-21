@@ -483,3 +483,9 @@ See Mezcla Site!
 
 - Everything that changes dynamically on the screen as the user interacts with the web page is all written in JavaScript! It’s a powerful tool and one of the most popular programming languages in the world right now.
 - You likely have some gaps in fully understanding the final solution - again, that is OKAY - the goal of this was not to go deep, but spark some curiosity for what is possible!
+
+---
+
+# Survey
+
+See Mezcla Site!
