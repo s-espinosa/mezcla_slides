@@ -25,6 +25,8 @@ and follow the sections in the Welcome section to get set up.
 - Group Challenge (1 hour and 30 minutes)
 - Presentations and Wrap-Up (1 hour)
 
+12:30 MT as a hard-ish stop for the morning.
+
 ---
 
 # Online Learning Norms
@@ -254,132 +256,136 @@ See Mezcla site.
 
 ---
 
-# JavaScript Overview
+# Reflect
 
-JavaScript is the part of the code that controls user interaction. It allows the user to actually <em>do</em> something on the site. The user can click buttons or type information in a form and they usually get some form of visual feedback on the screen that they did something. Before we continue with our interactive webpage, let’s review some JavaScript basics.
-
-## Data Types
-
-Variables can store different data types. The most common are strings and numbers. A string is a string of characters enclosed in quotation marks. A number is a whole number with no quotation marks. We can perform operations with number values, but we will only be using strings today!
-
-```js
-'I am a string!'
-
-"I can hold emojis: 💥🦄✨, lots of spaces:     , and special characters: $#@%"
-
-4 + 2
-//=> 6
-
-7 * 3
-//=> 21
-```
-
-## Variables
-
-Variables allow us to store information in a container with a label. We can then use that label to reference the contents of that container.
-
-In JavaScript, we declare variables using the `var` keyword. This tells JavaScript that we're about to make a new variable, or _declare a variable_. Here are a few examples of JavaScript variables:
-
-```js
-var age = 21;
-var school = 'Turing School of Software & Design';
-var firstName = 'Sal';
-```
-
-## Arrays
-
-Another data type is an array, which is just a collection of items that belong together. For example, we could have an array of friends, one string for each friend's name. Or we could have an array of numbers, one number for each friend's age.
-
-Arrays are helpful, because we can perform the same action on every item of the array with a method called forEach.
-
-```js
-var friends = ['Enrique', 'Selena', 'Shakira', 'Marc', 'Ricky', 'Jennifer'];
-```
-
-## console.log()
-
-As we learn about JavaScript today, we will use the `console.log()` method to print the data we are working with out to the console in replit.
-
-Here's the syntax:
-
-```js
-console.log(firstName);
-//=> 'Sal'
-console.log(age);
-//=> 21
-```
-<br>
-
-<div class="try-it-new">
-  <h2>Breakouts: Variables</h2>
-  <p>That was a LOT of info! Fork <a href="https://replit.com/@turingschool/javascript-variables#script.js" target="blank">this replit</a> and follow the directions to play around with variables and data types. We will only be working on the JavaScript file. There is one example for the first two steps to help you get started.</p>
-  <ul>
-    <li>Declare 3 variables, using the labels name, email, and numberOfPets. Assign each to an appropriate value.</li>
-    <li>Make sure to <code>console.log()</code> each variable to verify you've stored it correctly!</li>
-    <li><strong>Finished?</strong> Declare another variable that stores an array. You choose the name of the variable and the values!</li>
-  </ul>
-</div>
-
-
-## JavaScript Summary
-
-- Variables allow us to store information in a container with a label.
-- Arrays are a collection of items that belong together.
-- Reminder: This stuff gets really complex! We are only scratching the surface with some foundational topics today.
-
-<a href="../js-2">Next Section: Event Listeners</a>
-
-
-
-
-
-
+* Before JavaScript, websites used to be built with only HTML and CSS.
+* You can still build a site that delivers value without JavaScript!
 
 ---
 
-# BREAK
+# JavaScript
 
+JavaScript is the part of the code that controls user interaction.
 
+---
+
+# Data Types
+
+Data types are *types* of *things*. E.g. strings and numbers.
+
+```js
+// A string example
+'I am a string!'
+"I can hold emojis: 💥🦄✨, lots of spaces:     , and special characters: $#@%"
+
+// Numbers
+4 + 2
+7 * 3
+```
+
+---
+
+# Variables
+
+Variables allow us to store information in a container with a label.
+We can then use that label to reference the contents of that container.
+
+In JavaScript, we declare variables using the `var` keyword:
+
+```js
+var firstName = 'Sal';
+var age = 21;
+var school = 'Turing School of Software & Design';
+```
+
+---
+
+# console.log()
+
+The `console.log()` method to print the data we are working with out to the console in replit.
+
+```js
+var firstName = 'Sal';
+var age = 21;
+console.log(firstName);
+console.log(age);
+```
+
+---
+
+# Arrays
+
+Arrays are collections of items that belong together.
+
+* For example, we could have an array of strings, where each string is a friend's name.
+* We could have an array of numbers, one number for each friend's age.
+
+```js
+var friends = ["Jessica", "Jerome", "Jorge", "Chema"]
+var ages = [21, 23, 22, 25]
+```
+
+---
+
+# Why arrays?
+
+Arrays allow us to do things multiple times, for each *element* of the array.
+
+```js
+"Hi, Jessica!"
+"Hi, Jerome!"
+"Hi, Jorge!"
+"Hi, Chema!"
+```
+
+We would use the method `forEach` allows us to do the same thing to each element of an array.
+
+---
+
+# Breakout: Variables
+
+See Mezcla page.
+
+---
+
+# JavaScript Summary
+
+- Variables allow us to store information in a container with a label.
+- Arrays are a collection of items that belong together.
 
 ----
 
-# JS 2
-
-
-
-
-
-
-
-
-
-
-
-
-<a href="../">Back to Setup Page</a>
-
 # Event Listeners
 
-Before JavaScript, websites used to be built with only HTML and CSS. You could maybe click a button and go to another page, but that’s about it. Now, we can do so much more thanks to JavaScript!
-
-## Tour the Existing HTML Code
-
-We will be using a new practice replit to practice these skills before we implement them in our project. Go ahead and <a target="blank" href="https://replit.com/@turingschool/javascript-event-listeners#index.html">fork this replit</a> to get started.
-
-Look at all three files and try to answer these questions.
+[Fork this replit](https://replit.com/@turingschool/javascript-event-listeners#index.html)
 
 - How many HTML elements are creating the elements that appear in the browser?
 - Which HTML element already has a class on it? What would be a good name for a class on the other elements?
 
+We'll share out in a moment.
 
-## Accessing an HTML Element with JavaScript
+---
 
-We know variables can store information to reference later. Variables can also reference <strong>parts of the HTML</strong> we’ve written using the JavaScript method `document.querySelector` to access that element. For example, if we want a variable to represent the `h1` heading at the top of our page, we need to do two things:
+# Accessing an HTML Element with JavaScript
+
+We can use JavaScript to access an HTML element and store it in a variable.
+
+* We know variables can point to information to reference later.
+* Variables can also point to *parts of the HTML*.
+* We use the JavaScript method `document.querySelector` to access that element.
+
+---
+
+# Steps
+
+For example, if we want a variable to represent the `h1` heading at the top of our page, we need to do two things:
 
 1. Add a class to the `h1` element in the HTML.
 2. Use the JavaScript method `document.querySelector` to access that element.
 
-Here's how that looks in practice:
+---
+
+# Code
 
 ```html
 <!-- HTML code -->
@@ -394,18 +400,35 @@ console.log(title.innerText);
 // "Puppy Facts" will print out to the console
 ```
 
+---
+
+# Example
+
 If you look the script.js file in our practice replit, you'll notice that those two lines of code are already in there.
 
 - What happens when you run the code?
 - What do you think line 10 is doing?
 
-For the first time today, we have our JavaScript "talking to" our HTML code! This is exciting stuff! Go ahead and follow the directions in your `script.js` file to create a variable for every HTML element, console.log the values, and then reassign the values.
+---
 
-## Event Listeners
+# Practice
 
-In JavaScript, an event listener is a way to set up code to run only when a very specific thing happens. Right now, all of our content changes immediately when the page loads. We want the content to only change <em>when the user clicks the button</em>. That’s an event listener – you’ll tell the code to listen for a click on a specific button on the page, then run the code that changes the content.
+Our JavaScript "talking to" our HTML code!
 
-Here's how that looks in practice:
+Go ahead and follow the directions in your `script.js` file to create a variable for every HTML element, console.log the values, and then reassign the values.
+
+---
+
+# Event Listeners
+
+* When something happens (e.g. when a user clicks on a button)
+* Do something (e.g. change the text that is displayed in a header)
+
+We want the content to only change **when the user clicks the button**.
+
+---
+
+# Example
 
 ```html
 <!-- HTML code -->
@@ -422,6 +445,8 @@ btn.addEventListener('click', function () {
   title.innerText = "Kitten Facts";
 })
 ```
+
+---
 
 Now that we moved the reassignment of the value on the title inside of the event listener, that code will only run after the user clicks on the button. BOOM! We have an interactive webpage.
 <br><br>
